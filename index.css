@@ -1,0 +1,211 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;;
+}
+.container{
+    max-width: 100%;
+    height: 118vh;
+    background-color:#f0f2f5;
+}
+.container .facebook_container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(440px,auto);
+    justify-items: center;
+    align-items: center;
+    max-width: 100%;
+  }
+.container .facebook_container .facebook_heading{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left:90px;
+    margin-top:50px;
+}
+.container .facebook_container .facebook_heading img{
+    height:90px;
+    width:306px;
+}
+.container .facebook_heading p{
+     font-size: 28px;
+     max-width:500px;
+     margin-left:34px;
+}
+.facebook_form_container{
+    background-color: #fff;
+    margin-top:130px;
+    width:396px;
+    height:345px;
+    border-radius: 2%;
+    box-shadow: 0 2px 4px rgb(0 0 0 /10%), 0 2px 16px rgb(0 0 0 /10%);
+}
+form{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:10px;
+    padding-top: 15px;
+    margin-bottom: 18px;
+}
+input{
+    width:90%;
+    padding:15px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size:15px;
+    margin: 0 auto;
+    cursor:auto;
+}
+input::placeholder{
+    font-size: 17px;
+    color:grey;
+}
+input:focus{
+    outline:none;
+    border-color: #1877f2;
+}
+.sign_in_button{
+    width:90%;
+    padding:15px;
+    font-size: 20px;
+    cursor:pointer;
+    color:#fff;
+    background-color: #1877f2;
+    border:1px solid #1877f2;
+    border-radius: 6px;
+   margin: 5px auto;
+}
+.pass_hover:hover{
+    background-color: #4267f2;
+}
+.facebook_form_container form p{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    color:#1877f2;
+    font-size: 14px;
+    margin: 0 auto;
+}
+.facebook_form_container form p:hover{
+    cursor:pointer;
+    text-decoration: underline;
+}
+.facebook_form_container form hr{
+    width:92%;
+    margin:10px auto;
+    border-color:#dddfe2;
+   border-top-style:none;
+   border-bottom-style:solid;
+   border-left-style: none;
+   border-right-style:none;
+}
+.button{
+    width:50%;
+    font-size: 17px;
+    background-color: #42b72a;
+    border:1px solid #42b72a;
+}
+.button:hover{
+    background-color: #3ba225;
+    border-color:#3ba225;
+}
+.facebook_write_container{
+  padding-top:30px;
+  font-size: 14px;
+   text-align: center;
+   cursor:auto;
+}
+.facebook_write_container strong:hover{
+         text-decoration: underline;
+         cursor: pointer;
+}
+.bottom_container{
+    max-width:100%;
+    background-color: #fff;
+    height:173px;
+  padding-left:50px;
+   display:grid;
+   grid-template-columns: 1fr;
+   align-items: center;
+   justify-items: center;
+}
+.bottom_container .facebook_bottom_container{
+    max-width:90%;
+   display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+   cursor:context-menu;
+}
+.bottom_container .facebook_bottom_container .top_part{
+    word-spacing: 5px;
+}
+.bottom_container .facebook_bottom_container .top_part span{
+    font-size: 12px;
+    color:grey;
+}
+.bottom_container .facebook_bottom_container .top_part span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.plus_button{
+    padding-left:8px;
+    padding-right: 8px;
+    font-size: 15px;
+    color: grey;
+    border:1px solid #dddfe2;
+}
+.plus_button:hover{
+    cursor: pointer;
+}
+.bottom_container .facebook_bottom_container hr{
+    width:94%;
+    margin-top:10px;
+    border-color:#dddfe2;
+    border-top-style:none;
+    border-bottom-style:solid;
+    border-left-style: none;
+    border-right-style:none;
+}
+.bottom_container .facebook_bottom_container .bottom_part {
+max-width: 90%;
+margin-top: 5px;
+}
+.bottom_container .facebook_bottom_container .bottom_part div{
+    display:inline-block;
+    font-size: 12px;
+    color:grey;
+}
+.bottom_container .facebook_bottom_container .bottom_part div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.bottom_container .facebook_bottom_container .bottom_part {
+    word-spacing: 10px;
+}
+.bottom_container .facebook_bottom_container .bottom_part{
+    word-spacing: 12px;
+}
+.bottom_container .facebook_bottom_container .bottom_part{
+    word-spacing: 15px;
+}
+.bottom_container .facebook_bottom_container .copyright{
+    font-size: 11px;
+    margin-top:24px;
+    color:grey;
+    cursor: auto;
+}
+
+@media (min-width:1920px){
+    .facebook_form_container{
+        align-self: start;
+        justify-self: start;
+    }
+}
+@media (max-width:1138px){
+    .container .facebook_container .facebook_heading{
+        margin-left:0;
+    }
+}
